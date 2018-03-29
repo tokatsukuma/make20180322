@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2kZ-l2-iAW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SearchVC-->
+        <scene sceneID="tvB-gv-9Bh">
+            <objects>
+                <viewController id="2kZ-l2-iAW" customClass="SearchVC" customModule="okashi2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WXw-5P-S1V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Gtq-fH-4sK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d5A-Lw-aEZ">
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="okashiCell" textLabel="bg5-w1-3wl" style="IBUITableViewCellStyleDefault" id="bt2-mq-9Um">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bt2-mq-9Um" id="ula-9k-bgF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bg5-w1-3wl">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gtq-fH-4sK" firstAttribute="top" secondItem="h56-Es-ZWk" secondAttribute="top" id="0NZ-ae-Obj"/>
+                            <constraint firstItem="d5A-Lw-aEZ" firstAttribute="leading" secondItem="h56-Es-ZWk" secondAttribute="leading" id="3wg-ai-pOa"/>
+                            <constraint firstItem="d5A-Lw-aEZ" firstAttribute="top" secondItem="Gtq-fH-4sK" secondAttribute="bottom" id="7qC-4L-zeb"/>
+                            <constraint firstItem="d5A-Lw-aEZ" firstAttribute="bottom" secondItem="h56-Es-ZWk" secondAttribute="bottom" id="Ntq-0B-ZrS"/>
+                            <constraint firstItem="Gtq-fH-4sK" firstAttribute="trailing" secondItem="h56-Es-ZWk" secondAttribute="trailing" id="QnR-G2-BvM"/>
+                            <constraint firstItem="d5A-Lw-aEZ" firstAttribute="trailing" secondItem="h56-Es-ZWk" secondAttribute="trailing" id="w7d-su-A11"/>
+                            <constraint firstItem="Gtq-fH-4sK" firstAttribute="leading" secondItem="h56-Es-ZWk" secondAttribute="leading" id="xfu-xs-pXl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h56-Es-ZWk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aOo-6l-Pxl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQ6-LM-Q3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1335" y="127"/>
+        </scene>
+    </scenes>
+</document>
