@@ -5,6 +5,9 @@
 //  Created by User2 on 2018/03/15.
 //  Copyright © 2018年 User2. All rights reserved.
 //
+
+//改行処理する
+
 import UIKit
 
 class SuperVC: UIViewController {
