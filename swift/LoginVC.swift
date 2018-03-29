@@ -29,6 +29,8 @@ class LoginVC: SuperVC {
         //ログイン完了を送信
         self.callbackLogin?()
         
+        //変更コメント追加
+        
 //        let storyboard: UIStoryboard = UIStoryboard(name: "Search", bundle: nil)
 //        let nextView = storyboard.instantiateInitialViewController()
 //        present(nextView!, animated: true, completion: nil)
